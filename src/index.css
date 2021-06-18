@@ -25,6 +25,10 @@
         -webkit-text-stroke: 2px black;
     }
 
+    .radius-sm {
+        @apply rounded-tl-50 rounded-tr-5 rounded-br-20 rounded-bl-5
+    }
+
     .radius-md {
         @apply rounded-tl-70 rounded-tr-10 rounded-br-30 rounded-bl-10
     }

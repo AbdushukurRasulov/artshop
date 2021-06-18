@@ -15,7 +15,7 @@ const Categories = ({ data: { category, products } }) => {
                 </button>
             </div>
 
-            <div className="grid grid-cols-3 gap-x-17 gap-y-10 py-9">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-x-17 md:gap-10 py-9">
                 {
                     products.map((item, i) => <Product key={i} product={item} category={category} />)
                 }
