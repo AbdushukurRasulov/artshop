@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+	font-family:"Anja Eliane";
+	src:url("./fonts/Anja_Eliane.eot?") format("eot"),
+	url("./fonts/Anja_Eliane.woff") format("woff"),
+	url("./fonts/Anja_Eliane.ttf") format("truetype");
+	font-weight:normal;
+	font-style:normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+@layer base {
+    body {
+        @apply font-body;
+    }
+}
+
+@layer utilities {
+    .logo {
+        font-family:"Anja Eliane";
+        -webkit-text-stroke: 3px black;
+    }
+
+    .radius-md {
+        @apply rounded-tl-70 rounded-tr-10 rounded-br-30 rounded-bl-10
+    }
+
+    .content {
+        margin: -2px;
+    }
 }
