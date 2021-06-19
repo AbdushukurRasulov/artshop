@@ -13,7 +13,7 @@ module.exports = {
       },
       spacing: {
         '4.5': '18px',
-        17: '77px'
+        17: '77px',
       },
       fontFamily: {
         'body': ['Poppins', 'sans-serif']

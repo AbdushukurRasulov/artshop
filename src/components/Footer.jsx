@@ -2,16 +2,16 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className="max-w-5xl mx-auto px-5 py-14">
+        <footer className="max-w-5xl mx-auto text-center md:text-left px-5 py-14">
             <a href="!#" className="logo block text-3xl text-brand-violet leading-8">
                 Logo
             </a>
 
-            <div className="flex items-center justify-between text-lg leading-6 py-9">
-                <a href="!#">Learn more</a>
-                <a href="!#">About</a>
-                <a href="!#">Products</a>
-                <a href="!#">Contact us</a>
+            <div className="md:flex items-center justify-between text-lg leading-6 space-y-4 md:space-y-0 py-4 md:py-9">
+                <a href="!#" className="hidden md:block">Learn more</a>
+                <a href="!#" className="block">About</a>
+                <a href="!#" className="hidden md:block">Products</a>
+                <a href="!#" className="block">Contact us</a>
             </div>
             <div className="flex items-center justify-center space-x-5 py-3">
                 <a href="!#">

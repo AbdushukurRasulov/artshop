@@ -15,12 +15,12 @@ const Main = () => {
         <main className="bg-white rounded-70 lg:rounded-100 -mt-24">
             <div className="max-w-5xl mx-auto px-5">
                 {/* MAIN HEADER */}
-                <div className="flex flex-row items-center justify-between py-11">
-                    <div className="flex items-center flex-row justify-center md:space-x-4">
-                        <div>
+                <div className="md:flex flex-row items-center justify-between py-11">
+                    <div className="flex items-center flex-col md:flex-row justify-center md:space-x-4">
+                        <div className="-mt-17 md:mt-0">
                             <img src="images/avatar.png" alt="" className="w-24 h-24" />
                         </div>
-                        <div>
+                        <div className="py-4">
                             <h3 className="text-xl lg:text-2xl font-semibold leading-8 lg:leading-10">
                                 Katiebcartoons
                             </h3>
@@ -38,23 +38,21 @@ const Main = () => {
                         </div>
                     </div>
 
-                    <div className="flex items-center space-x-4 ">
-                        <a href="!#" className="w-36 lg:w-40 block bg-brand-violet lg:text-xl font-medium border border-black leading-6 lg:leading-8 rounded-full px-6 py-3 mt-4">
+                    <div className="flex items-center justify-between space-x-4 ">
+                        <a href="!#" className="w-full sm:w-36 lg:w-40 block bg-brand-violet lg:text-xl text-center font-medium border border-black leading-6 lg:leading-8 rounded-full px-6 py-3 mt-4">
                             <div className="flex items-center">
                                 <img src="images/donate.svg" alt="donation mag" className="w-4 lg:w-auto mr-3" />
                                 Donate
                             </div>
                         </a>
 
-                        <a href="!#" className="w-36 lg:w-40 block bg-white lg:text-xl font-medium text-center border border-black leading-6 lg:leading-8 rounded-full px-6 py-3 mt-4">
+                        <a href="!#" className="w-full sm:w-36 lg:w-40 block bg-white lg:text-xl font-medium text-center border border-black leading-6 lg:leading-8 rounded-full px-6 py-3 mt-4">
                             Follow
                         </a>
                     </div>
                 </div>
 
                 {
-
-                    // 
                     items.map((item, i) => <Categories key={i} data={item} />)
                 }
 
