@@ -2,7 +2,7 @@ import React from 'react'
 
 const Product = ({ product: { name, count, price, image }, category }) => {
 
-    console.log(category)
+
     var color = ''
 
     if (category === 't-shirts') {
@@ -37,12 +37,12 @@ const Product = ({ product: { name, count, price, image }, category }) => {
 
             {
                 count > 0
-                    ?
-                    (
-                        <div className="w-7 h-7 lg:w-11 lg:h-11 text-xs lg:text-base bg-brand-yellow text-black font-semibold border lg:border-2 border-black absolute top-1/3 right-3 leading-7 lg:leading-10 text-center whitespace-nowrap">
-                            +{count}&gt;
-                        </div>
-                    ) : ('')
+                &&
+                (
+                    <div className="w-7 h-7 lg:w-11 lg:h-11 text-xs lg:text-base bg-brand-yellow text-black font-semibold border lg:border-2 border-black absolute top-1/3 right-3 leading-7 lg:leading-10 text-center whitespace-nowrap">
+                        +{count}&gt;
+                    </div>
+                )
             }
 
         </div>
